@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="77.999" height="104.837" viewBox="0 0 77.999 104.837">
+  <g id="Hydrobiologie" transform="translate(-283.001 -1306.963)">
+    <path id="Tracé_113" data-name="Tracé 113" d="M198.991,545.349V586.18a2.64,2.64,0,0,0,1.319,2.286l35.361,20.415a2.64,2.64,0,0,0,2.64,0l35.36-20.415a2.638,2.638,0,0,0,1.32-2.286V545.349a2.638,2.638,0,0,0-1.32-2.286l-35.36-20.416a2.64,2.64,0,0,0-2.64,0l-35.361,20.416A2.64,2.64,0,0,0,198.991,545.349Z" transform="translate(85.01 785.707)" fill="#fff" stroke="#21b7ef" stroke-width="2"/>
+    <g id="Groupe_150" data-name="Groupe 150" transform="translate(306.163 1378.669)">
+      <circle id="Ellipse_42" data-name="Ellipse 42" cx="16.066" cy="16.066" r="16.066" fill="#fff" stroke="#21b7ef" stroke-miterlimit="10" stroke-width="2"/>
+      <g id="Groupe_149" data-name="Groupe 149" transform="translate(10.262 6.105)">
+        <path id="Tracé_117" data-name="Tracé 117" d="M227.142,576.24l-4.685,8.171a5.8,5.8,0,1,0,10.069,0l-4.685-8.171A.4.4,0,0,0,227.142,576.24Z" transform="translate(-221.689 -576.037)" fill="#21b7ef"/>
+      </g>
+    </g>
+    <g id="Groupe_200" data-name="Groupe 200" transform="translate(169.201 1039.773)">
+      <line id="Ligne_26" data-name="Ligne 26" x2="1.649" y2="3.093" transform="translate(148.371 290.333)" fill="none" stroke="#21b7ef" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="Tracé_297" data-name="Tracé 297" d="M148,335.833v1.83a4.588,4.588,0,0,0,4.588,4.588h.928" transform="translate(-10.144 -38.464)" fill="none" stroke="#21b7ef" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="Tracé_298" data-name="Tracé 298" d="M148,438.585v-1.83a4.588,4.588,0,0,1,4.588-4.588h.928" transform="translate(-10.144 -119.901)" fill="none" stroke="#21b7ef" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+      <line id="Ligne_27" data-name="Ligne 27" x2="7.371" transform="translate(136 308.027)" fill="none" stroke="#21b7ef" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="Tracé_299" data-name="Tracé 299" d="M213.529,318.426v-4.948a3.144,3.144,0,0,0-3.144-3.144h-6.907a3.144,3.144,0,0,0-3.144,3.144v4.948" transform="translate(-54.385 -16.907)" fill="none" stroke="#21b7ef" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="Tracé_300" data-name="Tracé 300" d="M192.842,384.162h.361a8.814,8.814,0,0,0,8.814-8.814V363.492a.825.825,0,0,0-.825-.825h-16.7a.825.825,0,0,0-.825.825v11.856a8.814,8.814,0,0,0,8.814,8.814Z" transform="translate(-40.296 -61.148)" fill="none" stroke="#21b7ef" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+      <line id="Ligne_28" data-name="Ligne 28" x1="1.649" y2="3.093" transform="translate(155.072 290.333)" fill="none" stroke="#21b7ef" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="Tracé_301" data-name="Tracé 301" d="M307.848,335.833v1.83a4.588,4.588,0,0,1-4.588,4.588h-.928" transform="translate(-140.611 -38.464)" fill="none" stroke="#21b7ef" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="Tracé_302" data-name="Tracé 302" d="M307.848,438.585v-1.83a4.588,4.588,0,0,0-4.588-4.588h-.928" transform="translate(-140.611 -119.901)" fill="none" stroke="#21b7ef" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+      <line id="Ligne_29" data-name="Ligne 29" x1="7.371" transform="translate(161.722 308.027)" fill="none" stroke="#21b7ef" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+      <line id="Ligne_30" data-name="Ligne 30" y1="10.747" transform="translate(152.546 301.519)" fill="none" stroke="#21b7ef" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+  </g>
+</svg>
