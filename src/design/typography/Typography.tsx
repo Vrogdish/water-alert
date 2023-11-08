@@ -29,7 +29,7 @@ export default function Typography({
       break;
     case "h1":
       variantStyle = playfair.className;
-      variantSize = "text-2xl md:text-4xl lg:text-7xl  tracking-widest leading-tight ";
+      variantSize = "text-2xl md:text-4xl lg:text-6xl  tracking-widest leading-tight ";
       variantWeight = "font-bold"
       break;
     case "h2":

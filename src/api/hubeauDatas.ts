@@ -73,11 +73,11 @@ export const getDataFromStation = async (code_bss: string, firstdate : string) =
     const jsonResponse = await fetch(url);
     const response = await jsonResponse.json();
     result.data = response.data as StationDataType[];
-    console.log(response);
+    
     return result;
+
   } catch (error) {
     result.error = error;
-    console.log(error);
 
     return result;
   }

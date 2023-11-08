@@ -1,44 +1,33 @@
-"use client";
+// "use client";
 
-import React, { useState } from "react";
-import StationChart from "../station-Chart/StationChart";
+// import useStationData from "@/hooks/useStationData";
+// import React, { useState } from "react";
+// import Table from "../table/Table";
+// import RangeSelector from "../range-selector/RangeSelector";
+// import dynamic from "next/dynamic";
+// const DynamicChart = dynamic(() => import("../../components/charts/Charts"), {
+//   ssr: false,
+// });
 
-interface Props {
-  bss: string;
-}
+// interface Props {
+//   bss: string;
+// }
 
-export default function StationData({ bss }: Props) {
-  const [range, setRange] = useState(1);
-  const choiceStyle = "w-20 border text-center cursor-pointer"
+// export default function StationData({ bss }: Props) {
+//   const [range, setRange] = useState(1);
 
-  return (
-    <div className="flex gap-6 justify-center my-10">
-      <p>Periodes :</p>
-      <div
-        className={`${choiceStyle} ${
-          range === 1 ? "text-black bg-white " : " text-white bg-transparent"
-        }`}
-        onClick={() => setRange(1)}
-      >
-        1 an
-      </div>
-      <div
-        className={`${choiceStyle} ${
-          range === 2 ? "text-black bg-white " : " text-white bg-transparent"
-        }`}
-        onClick={() => setRange(2)}
-      >
-        2 ans
-      </div>
-      <div
-        className={`${choiceStyle} ${
-          range === 3 ? "text-black bg-white " : " text-white bg-transparent"
-        }`}
-        onClick={() => setRange(3)}
-      >
-        3 ans
-      </div>
-      <StationChart bss={bss} range={range}/>
-    </div>
-  );
-}
+//   const { loading, stationDatas, errorData } = useStationData({ bss, range });
+
+//   if (stationDatas && loading === false) {
+//     return (
+//       <div>
+//         <Table dataStation={stationDatas} />
+//         <h2 className="text-2xl text-center mb-6">
+//           Historique des mesures effectuées
+//         </h2>
+//         <RangeSelector />
+//         <DynamicChart stationData={stationDatas} />
+//       </div>
+//     );
+//   }
+// }

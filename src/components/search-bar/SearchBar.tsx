@@ -25,8 +25,7 @@ export default function SearchBar({className}:Props) {
   const router = useRouter();
 
   const onSubmit: SubmitHandler<Inputs> = (data) => {
-    console.log(data);
-    if (data.departementCode != "") {
+    if (data.departementCode != "none") {
       router.push("/map/" + data.departementCode);
     }
   };
@@ -38,7 +37,7 @@ export default function SearchBar({className}:Props) {
       </div>
       <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-20">
         <select {...register("departementCode")}>
-          <option value={""}>-- Liste des départements --</option>
+          <option value={"none"}>-- Liste des départements --</option>
           {departements.map((elem, index) => (
             <option key={index} value={elem.num_dep.toString()}>
               {elem.num_dep} - {elem.dep_name}

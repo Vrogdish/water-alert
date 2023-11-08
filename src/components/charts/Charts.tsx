@@ -34,15 +34,15 @@ export default function Charts({ stationData, className }: Props) {
   }, [stationData]);
 
   return (
-    <div className={` ${className} text-black`}>
+    <div className={` ${className} text-black overflow-x-scroll md:mx-20`}>
       <AreaChart
-        className="mx-auto"
+        className=""
         width={1440}
-        height={400}
+        height={300}
         data={chartData}
         margin={{
           top: 10,
-          right: 30,
+          right: 0,
           left: 0,
           bottom: 0,
         }}
