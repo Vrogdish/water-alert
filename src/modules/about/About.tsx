@@ -7,7 +7,7 @@ export default function About() {
       <div className="flex lg:gap-40 flex-col lg:flex-row-reverse items-center">
         <div>
           <div className="flex lg:flex-row-reverse flex-row items-center justify-between mb-6">
-            <h2 className="text-2xl mx-10 md:mx-0 ">Plus de 42 millions de mesures</h2>
+            <h2 className="md:text-2xl mx-2 md:mx-0 ">Plus de 42 millions de mesures</h2>
             <Image src={"/png/arrow.png"} alt="fleche" width={50} height={50} className="rotate-180 hidden lg:block" />
           </div>
           <Image

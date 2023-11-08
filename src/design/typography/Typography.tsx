@@ -28,18 +28,18 @@ export default function Typography({
       variantStyle = playfair.className;
       break;
     case "h1":
-      variantStyle = playfair.className;
+      // variantStyle = playfair.className;
       variantSize = "text-2xl md:text-4xl lg:text-6xl  tracking-widest leading-tight ";
       variantWeight = "font-bold"
       break;
     case "h2":
-      variantStyle = playfair.className;
+      // variantStyle = playfair.className;
       variantSize = "text-3xl tracking-widest ";
       variantWeight= "font-bold"
       break;
     case "h3":
-      variantStyle = playfair.className;
-      variantSize = 'text-2xl  '
+      // variantStyle = playfair.className;
+      variantSize = 'md:text-2xl  '
       variantWeight = "";
       break;
     case "caption":

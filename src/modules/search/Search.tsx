@@ -8,7 +8,7 @@ export default function Search() {
       <div className="flex flex-col items-center lg:flex-row lg:gap-40 ">
         <div>
           <div className="flex items-center gap-10 lg:justify-between mb-6">
-            <h2 className="text-2xl mx-10 md:mx-0">Accedez aux données partout en France</h2>
+            <h2 className="md:text-2xl mx-2 md:mx-0">Accedez aux données partout en France</h2>
             <Image src={"/png/arrow.png"} alt="fleche" width={50} height={50} className="hidden lg:block" />
           </div>
           <Image

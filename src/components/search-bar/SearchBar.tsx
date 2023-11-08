@@ -33,7 +33,7 @@ export default function SearchBar({className}:Props) {
   return (
     <div className={`${className}`}>
       <div>
-       <p className="mb-6"> Choississez votre département :</p>
+       <p className="mb-6 text-center md:text-left"> Choississez votre département :</p>
       </div>
       <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-20">
         <select {...register("departementCode")}>

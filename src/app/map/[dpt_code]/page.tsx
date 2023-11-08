@@ -22,15 +22,15 @@ export default async function page({
         <Return redirection="/#search">
           <p>Choisir un autre département</p>
         </Return>
-        <div className="flex flex-col items-center md:mx-10 md:my-20">
-          <h1 className="mx-6 my-6 md:text-2xl">
-            Liste des stations de mesures du département :{" "}
+        <div className="flex flex-col items-center md:mx-10 my-10 md:my-20">
+          <h1 className="mx-2 md:mx-6 my-6 md:text-2xl text-center">
+            Liste des stations de mesures du département {" "}
             {stationsList.data[0].nom_departement} ({dpt})
           </h1>
           <p className="mb-20 md:text-xl">
             Nombre de stations : {stationsList.data.length}
           </p>
-          <p className="mb-4 mx-6">
+          <p className="mb-4 mx-2 md:mx-6 text-sm">
             Cliquer sur une station pour voir les résultats d&apos;analyse
           </p>
           <DynamicMap
