@@ -36,7 +36,7 @@ export default function Charts({ stationData, className }: Props) {
   return (
     <div className={` ${className} text-black overflow-x-scroll md:mx-20`}>
       <AreaChart
-        className=""
+        className="mx-auto"
         width={1440}
         height={300}
         data={chartData}
