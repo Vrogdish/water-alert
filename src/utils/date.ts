@@ -3,6 +3,8 @@ export const getFirstDate = (nbrOfYears: number) => {
     const year = date.getFullYear();
     const day = date.getDate();
     const month = date.getMonth();
+     const oldYear = year - nbrOfYears
+    console.log(oldYear);
 
     const formatNumber = (nbr : number) => {
       let result = ""
@@ -13,10 +15,11 @@ export const getFirstDate = (nbrOfYears: number) => {
       }
       return result
     }
-
-    const firstDate = `${(
-      year - nbrOfYears
-    ).toString()}-${formatNumber(month+1)}-${formatNumber(day)}`;
+   
+    
+    const firstDate = `${oldYear.toString()}-${formatNumber(month+1)}-${formatNumber(day)}`;
+      
+    
 
     return firstDate;
   };

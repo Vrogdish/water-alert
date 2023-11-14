@@ -2,17 +2,17 @@
 
 import { StationDataType } from "@/types/StationDataType";
 import { StationType } from "@/types/StationType";
-
-
+import { getFirstDate } from "@/utils/date";
 
 export const getStations = async (code_departement: string) => {
+  const url =
+    "http://hubeau.eaufrance.fr/api/v1/niveaux_nappes/stations?" +
+    new URLSearchParams({
+      code_departement: code_departement,
+      date_recherche: "2023-01-01",
+    });
 
-  const url = "http://hubeau.eaufrance.fr/api/v1/niveaux_nappes/stations?" + new URLSearchParams({
-    code_departement : code_departement,
-    date_recherche : "2023-01-01"
-  })
-
-  let result: { data?: StationType[]; error?: any } = {}
+  let result: { data?: StationType[]; error?: any } = {};
 
   try {
     const jsonResponse = await fetch(url);
@@ -31,19 +31,20 @@ export const getStations = async (code_departement: string) => {
 // récupération d'un station en fonction de son code BBS
 
 export const getStationFromBbs = async (code_bss: string) => {
+  const url =
+    "http://hubeau.eaufrance.fr/api/v1/niveaux_nappes/stations?" +
+    new URLSearchParams({
+      code_bss: code_bss,
+    });
 
-  const url = "http://hubeau.eaufrance.fr/api/v1/niveaux_nappes/stations?" + new URLSearchParams({
-    code_bss : code_bss,
-  }) 
-
-  let result: {data?: StationType[]; error?: any } = {}
+  let result: { data?: StationType[]; error?: any } = {};
 
   try {
-    const jsonResponse = await fetch(url,{
-      method : "GET",
-      headers : {
-        "Accept" : "application/json"
-      }
+    const jsonResponse = await fetch(url, {
+      method: "GET",
+      headers: {
+        Accept: "application/json",
+      },
     });
     const response = await jsonResponse.json();
     result.data = response.data as StationType[];
@@ -59,23 +60,27 @@ export const getStationFromBbs = async (code_bss: string) => {
 
 // récupération des données relative à la station de mesure
 
-export const getDataFromStation = async (code_bss: string, firstdate : string) => {
+export const getDataFromStation = async (
+  code_bss: string,
+  beginingDate: string
+) => {
 
+  const url =
+    "http://hubeau.eaufrance.fr/api/v1/niveaux_nappes/chroniques?" +
+    new URLSearchParams({
+      code_bss: code_bss,
+      date_debut_mesure: beginingDate,
+    });
 
-  const url = "http://hubeau.eaufrance.fr/api/v1/niveaux_nappes/chroniques?"+new URLSearchParams({
-    code_bss : code_bss,
-    date_debut_mesure : firstdate
-  })
-
-  let result: { data?: StationDataType[]; error?: any } = {}
+  let result: { data?: StationDataType[]; error?: any } = {};
 
   try {
+    
     const jsonResponse = await fetch(url);
     const response = await jsonResponse.json();
     result.data = response.data as StationDataType[];
-    
-    return result;
 
+    return result;
   } catch (error) {
     result.error = error;
 
