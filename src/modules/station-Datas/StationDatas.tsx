@@ -5,6 +5,7 @@ import Table from "@/components/table/Table";
 import { getFirstDate } from "@/utils/date";
 import dynamic from "next/dynamic";
 import React from "react";
+import ErrorPage from "../error/ErrorPage";
 
 const DynamicChart = dynamic(() => import("../../components/charts/Charts"), {
   ssr: false,
@@ -20,9 +21,12 @@ export default async function StationDatas({ bss }: Props) {
   const station = await getStationFromBbs(bss);
   const dataStation = await getDataFromStation(bss, beginingDate);
 
-  console.log(dataStation);
-
-  if (station.data && dataStation.data) {
+  if (
+    station.data &&
+    station.data.length != 0 &&
+    dataStation.data &&
+    dataStation.data.length != 0
+  ) {
     return (
       <div className="mb-20">
         <Return redirection={"/map/" + station.data[0].code_departement}>
@@ -40,6 +44,6 @@ export default async function StationDatas({ bss }: Props) {
       </div>
     );
   } else {
-    <div className="text-3xl py-20">Erreur</div>;
+    return <ErrorPage />;
   }
 }

@@ -28,6 +28,7 @@ export default function RootLayout({
               alt=""
               width={1980}
               height={1024}
+              priority
               className="saturate-50 h-full object-cover object-top brightness-75"
             />
             <div className="bg-gradient-to-b from-transparent to-[#0B1D26] w-full h-full absolute top-0 "></div>

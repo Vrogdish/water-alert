@@ -1,9 +1,10 @@
 import { getStations } from "@/api/hubeauDatas";
 import dynamic from "next/dynamic";
 import React from "react";
+import ErrorPage from "../error/ErrorPage";
 const DynamicMap = dynamic(() => import("../../components/map/Map"), {
-    ssr: false,
-  });
+  ssr: false,
+});
 
 interface Props {
   dpt: string;
@@ -12,7 +13,7 @@ interface Props {
 export default async function StationsList({ dpt }: Props) {
   const stationsList = await getStations(dpt);
 
-  if (stationsList.data) {
+  if (stationsList.data && stationsList.data.length !=0) {
     return (
       <div>
         <div className="flex flex-col items-center md:mx-10 my-10 md:my-20">
@@ -33,5 +34,7 @@ export default async function StationsList({ dpt }: Props) {
         </div>
       </div>
     );
+  } else {
+    return <ErrorPage />;
   }
 }
