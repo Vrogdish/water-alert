@@ -1,3 +1,4 @@
+import Loader from "@/components/loader/Loader";
 import StationDatas from "@/modules/station-Datas/StationDatas";
 import React, { Suspense } from "react";
 
@@ -10,7 +11,7 @@ export default function page({
   const bss = params.code_bss.replace("_", "/");
 
   return (
-    <Suspense fallback = {<p className="text-3xl text-center h-96 py-20">Récupération des données en cours ...</p>}>
+    <Suspense fallback = {<Loader/>}>
       <StationDatas bss={bss}/>
     </Suspense>
     
