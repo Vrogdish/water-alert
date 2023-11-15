@@ -1,4 +1,4 @@
-import StationDatas from "@/modules/station-Datas/stationDatas";
+import StationDatas from "@/modules/station-Datas/StationDatas";
 import React, { Suspense } from "react";
 
 

@@ -23,4 +23,4 @@ export default function page({ params }: { params: { dpt_code: string } }) {
     </div>
   );
 }
-// }
+
