@@ -28,7 +28,7 @@ export default async function StationDatas({ bss }: Props) {
     dataStation.data.length != 0
   ) {
     return (
-      <div className="mb-20">
+      <div className="mb-32">
         <Return redirection={"/map/" + station.data[0].code_departement}>
           <p>Choisir une autre station</p>
         </Return>

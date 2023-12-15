@@ -9,7 +9,7 @@ export default function page({ params }: { params: { dpt_code: string } }) {
   const dpt = params.dpt_code;
 
   return (
-    <div>
+    <main>
       <Return redirection="/#search">
         <p>Choisir un autre département</p>
       </Return>
@@ -17,6 +17,6 @@ export default function page({ params }: { params: { dpt_code: string } }) {
       <Suspense fallback={<Loader />}>
         <StationsList dpt={dpt} />
       </Suspense>
-    </div>
+    </main>
   );
 }

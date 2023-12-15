@@ -24,7 +24,7 @@ export default async function StationsList({ dpt }: Props) {
           <p className="mb-20 md:text-xl">
             Nombre de stations : {stationsList.data.length}
           </p>
-          <p className="mb-4 mx-2 md:mx-6 text-sm">
+          <p className="mb-10 mx-2 md:mx-6 text-sm">
             Cliquer sur une station pour voir les résultats d&apos;analyse
           </p>
           <DynamicMap

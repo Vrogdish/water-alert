@@ -12,6 +12,7 @@ margin: auto; */
 main {
   max-width: 1980px;
   margin: auto;
+  min-height: 100vh;
 }
 
 input, option, select {
