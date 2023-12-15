@@ -21,15 +21,15 @@ export default function RootLayout({
     <html lang="fr">
       <body className={inter.className}>
         <Header />
-        <div className="absolute top-0 -z-10">
-          <div className=" relative">
+        <div className="absolute  -z-10 w-full ">
+          <div className=" relative m-auto w-full">
             <Image
               src={"/images/mountains.webp"}
-              alt=""
+              alt="montagnes"
               width={1980}
               height={1024}
               priority
-              className="saturate-50 h-full object-cover object-top brightness-75"
+              className="saturate-50 h-full  object-top brightness-75 mx-auto "
             />
             <div className="bg-gradient-to-b from-transparent to-[#0B1D26] w-full h-full absolute top-0 "></div>
           </div>
